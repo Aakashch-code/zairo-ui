@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+/* Keep our dark theme background */
+body {
+    background-color: #050505;
+    color: white;
+}
+/* Hide scrollbar but keep scroll working */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+.no-scrollbar {
+    -ms-overflow-style: none;  /* IE & Edge */
+    scrollbar-width: none;     /* Firefox */
+}
