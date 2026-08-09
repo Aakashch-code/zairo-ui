@@ -30,7 +30,7 @@ const MENU_GROUPS = [
 ];
 
 // Special item for AI
-const AI_ITEM = { to: "/fynix", icon: ChatBubbleLeftRightIcon, label: "Ask Fynix AI" };
+const AI_ITEM = { to: "/zai", icon: ChatBubbleLeftRightIcon, label: "Ask Zai AI" };
 
 export default function Sidebar() {
     // --- State ---
@@ -111,14 +111,14 @@ export default function Sidebar() {
                 <div className="mb-6">
                     <p className="text-xs font-bold text-zinc-600 uppercase tracking-wider mb-3 px-2">Assistant</p>
                     <a
-                        href="/fynix"
+                        href="/Zai"
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={closeMobile}
                         className="group flex items-center space-x-3 px-3 py-2 rounded-lg transition-all duration-200 mb-1 bg-gradient-to-r from-indigo-600/20 to-purple-600/20 border border-indigo-500/30 text-indigo-300 hover:text-white"
                     >
                         <ChatBubbleLeftRightIcon className="w-5 h-5 text-indigo-400" />
-                        <span className="text-sm font-medium">Ask Fynix AI</span>
+                        <span className="text-sm font-medium">Ask Zai AI</span>
                     </a>
                 </div>
 

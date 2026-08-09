@@ -8,6 +8,7 @@ import Dashboard from "./pages/Dashboard.jsx";
 import Register from "./pages/authentication/Register.jsx";
 import Login from "./pages/authentication/Login.jsx";
 import WorkspaceTeam from "./pages/workspace/WorkspaceTeam.jsx";
+import ZaiAI from "./pages/ai/Zai.jsx";
 
 
 // --- Layout Wrapper ---
@@ -43,6 +44,7 @@ function App() {
                     {/* --- Protected Routes --- */}
                     <Route path="/" element={<Dashboard />} />
                     <Route path="/users" element={<WorkspaceTeam />} />
+                    <Route path="/zai" element={<ZaiAI/>} />
                     {/* --- 404 Fallback --- */}
                     <Route path="*" element={
                         <div className="flex flex-col items-center justify-center h-[80vh] text-center px-4">

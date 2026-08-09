@@ -1,10 +1,7 @@
 import axios from 'axios';
 
-const API_BASE = "http://localhost:8085"
+const API_BASE = import.meta.env.VITE_API_URL;
 
-// =====================================================
-// AXIOS INSTANCE
-// =====================================================
 const api = axios.create({
     baseURL: `${API_BASE}/api`,
     headers: {
@@ -131,6 +128,22 @@ const downloadPdf = async (url, filename) => {
 // EXPORT PDF
 export const exportTransactionsPdf = () =>
     downloadPdf('/transactions/pdf', `transactions_${Date.now()}.pdf`);
+
+//Zai
+
+export const getZaiSummary = async () => {
+  const res = await api.get('/v1/ai/summary');
+  return res.data;
+};
+
+export const askZai = async (prompt) => {
+  const res = await api.post('/v1/ai/ask', {
+    prompt,
+  });
+
+  return res.data;
+};
+
 
 // =====================================================
 // EXPORT INSTANCE
