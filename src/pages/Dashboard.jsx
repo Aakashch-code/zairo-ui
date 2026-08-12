@@ -67,7 +67,7 @@ const CustomTooltip = ({ active, payload, label }) => {
     );
 };
 
-const StatCard = ({  title, value, color, sub }) => (
+const StatCard = ({  title, value, color, sub, icon: Icon }) => (
     <div style={{ background: '#000', border: '1px solid rgba(255,255,255,0.08)', borderRadius: 20, padding: '28px 28px 24px', position: 'relative', overflow: 'hidden', transition: 'transform 0.2s, border-color 0.2s', cursor: 'default' }}
          onMouseEnter={e => { e.currentTarget.style.transform = 'translateY(-2px)'; e.currentTarget.style.borderColor = `${color}30`; }}
          onMouseLeave={e => { e.currentTarget.style.transform = 'translateY(0)'; e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)'; }}>
